@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	<groups>
+		<run>
+			<include name = "india"> </include>
+			<include name = "gt"> </include>
+			<exclude name = "mi"> </exclude>
+		</run>
+   </groups>
+    <classes>
+      <class name="org.testNg_groupExecution_classes.Siraj"/>
+      <class name="org.testNg_groupExecution_classes.Bumrah"/>
+      <class name="org.testNg_groupExecution_classes.Rohit"/>
+      <class name="org.testNg_groupExecution_classes.Rashid"/>
+      <class name="org.testNg_groupExecution_classes.Jadeja"/>
+      <class name="org.testNg_groupExecution_classes.Kohli"/>
+      <class name="org.testNg_groupExecution_classes.Dhoni"/>
+      <class name="org.testNg_groupExecution_classes.Hardik"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
